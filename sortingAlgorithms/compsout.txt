@@ -1,0 +1,36 @@
+Runtime in microseconds
+
+Bubble Sort
+Size    Random            Descending        Ascending         Runtime Random    Runtime Descending  Runtime Ascending 
+1000    499500            499500            499500            4998              4997                999               
+2000    1999000           1999000           1999000           25994             27001               6997              
+4000    7998000           7998000           7998000           92983             85001               24996             
+8000    31996000          31996000          31996000          347521            325000              92525             
+
+Insertion Sort
+Size    Random            Descending        Ascending         Runtime Random    Runtime Descending  Runtime Ascending 
+1000    253367            499500            999               1005              997                 0                 
+2000    1039221           1999000           1999              3993              6000                0                 
+4000    3939393           7998000           3999              18005             27992               0                 
+8000    16041959          31996000          7999              53998             95996               0                 
+
+Quick Sort
+Size    Random            Descending        Ascending         Runtime Random    Runtime Descending  Runtime Ascending 
+1000    15366             9984              8986              0                 0                   0                 
+2000    32931             21961             19963             1001              0                   0                 
+4000    73988             47918             43923             0                 0                   999               
+8000    155980            103833            95839             997               0                   996               
+
+Heap Sort
+Size    Random            Descending        Ascending         Runtime Random    Runtime Descending  Runtime Ascending 
+1000    24715             23553             31448             1000              0                   0                 
+2000    55325             53162             70856             0                 999                 1000              
+4000    122861            118243            157652            1991              997                 2001              
+8000    269755            260174            347212            4988              3003                4996              
+
+3-Way Merge Sort
+Size    Random            Descending        Ascending         Runtime Random    Runtime Descending  Runtime Ascending 
+1000    10772             6308              6187              0                 997                 0                 
+2000    23942             13821             13441             0                 995                 0                 
+4000    53001             30320             29673             0                 997                 0                 
+8000    115977            65742             64237             993               998                 0                 
