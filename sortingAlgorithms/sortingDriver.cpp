@@ -76,7 +76,7 @@ int main () {
     fillArray(asort4, SIZE4, 1);
     fillArray(dsort4, SIZE4, 2);
 
-    outFile << "Runtime in microseconds\n\n";
+    outFile << "Runtime in nanoseconds\n\n";
 
     cout << "Bubble Sort\n";
     outFile << "Bubble Sort\n";
@@ -151,12 +151,12 @@ void printStats(int rand[], int desc[], int asc[], size_t n, int(*sort)(int[],si
     auto aT2 = Clock::now();
 
 	cout << left << setw(8) << n << setw(18) << random << setw(18) << descending <<
-		setw(18) << ascending << setw(18) << chrono::duration_cast<chrono::microseconds>(rT2 - rT1).count() << setw(20) 
-        << chrono::duration_cast<chrono::microseconds>(dT2 - dT1).count() << setw(18) << chrono::duration_cast<chrono::microseconds>(aT2 - aT1).count() << endl;
+		setw(18) << ascending << setw(18) << chrono::duration_cast<chrono::nanoseconds>(rT2 - rT1).count() << setw(20) 
+        << chrono::duration_cast<chrono::nanoseconds>(dT2 - dT1).count() << setw(18) << chrono::duration_cast<chrono::nanoseconds>(aT2 - aT1).count() << endl;
 
     outFile << left << setw(8) << n << setw(18) << random << setw(18) << descending <<
-		setw(18) << ascending << setw(18) << chrono::duration_cast<chrono::microseconds>(rT2 - rT1).count() << setw(20) 
-        << chrono::duration_cast<chrono::microseconds>(dT2 - dT1).count() << setw(18) << chrono::duration_cast<chrono::microseconds>(aT2 - aT1).count() << endl;
+		setw(18) << ascending << setw(18) << chrono::duration_cast<chrono::nanoseconds>(rT2 - rT1).count() << setw(20) 
+        << chrono::duration_cast<chrono::nanoseconds>(dT2 - dT1).count() << setw(18) << chrono::duration_cast<chrono::nanoseconds>(aT2 - aT1).count() << endl;
 
 	delete[] r;
 	delete[] d;

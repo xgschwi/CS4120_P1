@@ -46,7 +46,7 @@ void heapify(int data[ ], size_t n, int& c) {
 
     i = 0;
     while ((!heapified) && (leftChild(i) < n)) {
-        if (++c && rightChild(i) >= n) largeIndex;
+        if (rightChild(i) >= n) largeIndex;
         else if (++c && data[leftChild(i)] > data[rightChild(i)]) largeIndex = leftChild(i);
         else largeIndex = rightChild(i);
 
